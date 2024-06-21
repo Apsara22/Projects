@@ -1,8 +1,7 @@
 
-import Home from "./Components/Home";
+import Home from "./components/Home";
 import Rootlayout from "./Rootlayout";
-import Compiler from "./Components/Compiler";
-import Notfound from "./Components/Notfound";
+// 
 
 import {
   createBrowserRouter,
@@ -21,12 +20,9 @@ function App(){
             },
             {
               path: "*",
-              element: <Notfound/>
+              element: <Home/>
                 },
-                {
-                  path: "compiler",
-                  element: <Compiler/>
-                    },
+               
             
            
               ] } ])
