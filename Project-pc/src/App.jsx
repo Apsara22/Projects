@@ -1,5 +1,6 @@
 
 import Home from "./components/Home";
+import Notfound from "./Notfound";
 import Rootlayout from "./Rootlayout";
 // 
 
@@ -20,7 +21,7 @@ function App(){
             },
             {
               path: "*",
-              element: <Home/>
+              element: <Notfound/>
                 },
                
             
@@ -31,7 +32,10 @@ function App(){
  
   return(
     <>
+    <div className="w-screen h-screen flex items-start justify-start overflow-hidden "> 
      <RouterProvider router={router} />
+
+    </div>
     </>
   );
 
