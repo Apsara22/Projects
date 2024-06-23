@@ -1,5 +1,7 @@
 
 import Home from "./components/Home";
+import Projects from "./components/Projects";
+import SignUp from "./components/SignUp";
 import Notfound from "./Notfound";
 import Rootlayout from "./Rootlayout";
 // 
@@ -16,17 +18,19 @@ function App(){
       element: <Rootlayout/>,
       children:[
         {
-          path: "/",
+          path: "/home/*",
           element: <Home/>
             },
             {
               path: "*",
               element: <Notfound/>
                 },
-               
-            
-           
-              ] } ])
+                
+                    
+                
+
+                    
+           ] } ])
                
    
  
